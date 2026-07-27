@@ -11,7 +11,7 @@ This repository contains the source code for VLM-DTI, including the main models,
 The code in this repository is designed to run in a Conda environment named `vlmdti`. Ensure you have properly configured and activated this environment before executing the scripts:
 
 ```bash
-conda activate noveldti
+conda activate vlmdti
 ```
 
 ## Repository Structure & Script Descriptions
