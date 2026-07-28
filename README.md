@@ -8,7 +8,7 @@ This repository contains the source code for VLM-DTI, including the main models,
 
 ## Environment Setup
 
-The project is designed to run in a Conda environment named `noveldti`. The core dependencies required to run the minimal training script (`run_batch_training_OOD_Final.py`) are:
+The project is designed to run in a Conda environment named `vlmdti`. The core dependencies required to run the minimal training script (`run_batch_training_OOD_Final.py`) are:
 
 - **Python**: ~3.10
 - **PyTorch**: ~2.1.0 (with CUDA support, e.g., `cu118`)
@@ -23,8 +23,8 @@ The project is designed to run in a Conda environment named `noveldti`. The core
 You can create a new conda environment and install the required packages using the following commands:
 
 ```bash
-conda create -n noveldti python=3.10
-conda activate noveldti
+conda create -n vlmdti python=3.10
+conda activate vlmdti
 
 # Install PyTorch (example for CUDA 11.8)
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
