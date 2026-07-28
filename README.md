@@ -8,10 +8,32 @@ This repository contains the source code for VLM-DTI, including the main models,
 
 ## Environment Setup
 
-The code in this repository is designed to run in a Conda environment named `vlmdti`. Ensure you have properly configured and activated this environment before executing the scripts:
+The project is designed to run in a Conda environment named `noveldti`. The core dependencies required to run the minimal training script (`run_batch_training_OOD_Final.py`) are:
+
+- **Python**: ~3.10
+- **PyTorch**: ~2.1.0 (with CUDA support, e.g., `cu118`)
+- **DGL**: ~1.1.2 (Deep Graph Library, matching the PyTorch/CUDA version)
+- **NumPy**: ~1.26.4
+- **Pandas**: ~2.3.3
+- **Scikit-Learn**: ~1.7.2
+- **TQDM**: ~4.67.3
+
+### Installation
+
+You can create a new conda environment and install the required packages using the following commands:
 
 ```bash
-conda activate vlmdti
+conda create -n noveldti python=3.10
+conda activate noveldti
+
+# Install PyTorch (example for CUDA 11.8)
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+
+# Install DGL (Deep Graph Library)
+conda install -c dglteam/label/cu118 dgl=1.1.2.cu118
+
+# Install other essential dependencies
+pip install numpy pandas scikit-learn tqdm
 ```
 
 ## Repository Structure & Script Descriptions
